@@ -1,0 +1,55 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>Unit 4 Game </unit-4-game></title>
+       <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+       <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body onLoad=startUp()>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Number Game</h1>
+                <p>Insert description here...</p>
+            </div>
+            <div class="panel panel-default" id="instructions">
+                <div class="panel-body">
+                    ~~~~~~~~~~~~Insert instructions here~~~~~~~~~~~~
+                </div>
+            </div>
+
+            <div class="panel panel-default" id="NumberSection">
+                <div class="panel-heading">
+                    <h3>Number you are trying to get to:</h3>
+                </div>
+                <div class="panel-body">
+                    <span id="mainNum"></span>
+                </div>
+                <div class="panel-heading">
+                    <h3>The number you are at right now: </h3>
+                </div>
+                <div class="panel-body">
+                    <span id="playerNum"></span>
+                </div>
+            </div>
+
+            <div class="panel panel-default" id="scores">
+                <div class="panel-body">
+                    Win: <span id="wins"></span>
+                </div>
+                <div class="panel-body">
+                    Loss: <span id="loss"></span>
+                </div>
+            </div>
+
+            <div class="container" id="allImages">
+                <div class="addNum"><button><img id="pic1" src="assets/images/17-puppies-who-are-so-cute-they-will-make-you-mad-2-30501-1424359138-6_dblbig.jpg"></button></div>
+                <div class="addNum"><button><img id="pic2" src="assets/images/992f14494f5795aa9276cd1efc86c3c6.jpg"></button></div>
+                <div class="addNum"><button><img id="pic3" src="assets/images/basset-hound-puppy.jpg"></button></div>
+                <div class="addNum"><button><img id="pic4" src="assets/images/cutest-puppies-dachshund.jpg"></button></div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
