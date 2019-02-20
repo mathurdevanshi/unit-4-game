@@ -110,7 +110,9 @@ function reset(){
     $("#wins").append(wins);
     $("#loss").append(loss);
 
+    $("img").off("click");
     $("img").click(addNum);
+    
 
     console.log("playerNum in reset", playerNum);
 
@@ -136,7 +138,7 @@ function startUp(){
     $("#wins").append(wins);
     $("#loss").append(loss);
     $("img").click(addNum);
-    $(this).unbind(event);
+    //$("img").off("click");
 
     console.log("wins=", wins, "loss", loss);
     console.log("mainNum = ", mainNum);
