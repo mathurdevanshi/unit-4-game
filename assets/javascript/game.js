@@ -70,6 +70,7 @@ function addNum(){
     $("#playerNum").empty();
     $("#playerNum").append(playerNum);
     checkValue(playerNum);
+    
 }
 //---------------------------------------------------------  checks the playerNum against mainNum ##5
 function checkValue(playerNum){
@@ -111,14 +112,14 @@ function reset(){
 
     $("img").click(addNum);
 
-    // console.log("playerNum in reset", playerNum);
+    console.log("playerNum in reset", playerNum);
 
-    // console.log("wins=", wins, "loss", loss);
-    // console.log("mainNum = ", mainNum);
-    // console.log("pic1=", pic1);
-    // console.log("pic2=", pic2);
-    // console.log("pic3=", pic3);
-    // console.log("pic4=", pic4);
+    console.log("wins=", wins, "loss", loss);
+    console.log("mainNum = ", mainNum);
+    console.log("pic1=", pic1);
+    console.log("pic2=", pic2);
+    console.log("pic3=", pic3);
+    console.log("pic4=", pic4);
 }
 //---------------------------------------------------------  main order of events, starting point  ##1
 function startUp(){
@@ -135,13 +136,14 @@ function startUp(){
     $("#wins").append(wins);
     $("#loss").append(loss);
     $("img").click(addNum);
+    $(this).unbind(event);
 
-    // console.log("wins=", wins, "loss", loss);
-    // console.log("mainNum = ", mainNum);
-    // console.log("playerNum in startUp", playerNum);
-    // console.log("pic1=", pic1);
-    // console.log("pic2=", pic2);
-    // console.log("pic3=", pic3);
-    // console.log("pic4=", pic4);
+    console.log("wins=", wins, "loss", loss);
+    console.log("mainNum = ", mainNum);
+    console.log("playerNum in startUp", playerNum);
+    console.log("pic1=", pic1);
+    console.log("pic2=", pic2);
+    console.log("pic3=", pic3);
+    console.log("pic4=", pic4);
 }
 
