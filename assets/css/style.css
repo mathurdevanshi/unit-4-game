@@ -1,4 +1,15 @@
 img{
-    height:210px;
-    width:250px;
+    height:350px;
+    width:350px;
+    border: 2px solid black;
+}
+body{
+    text-align: center;
+}
+h1{
+    font-family: 'Rock Salt', cursive;
+}
+p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
 }
